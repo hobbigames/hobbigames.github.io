@@ -1,0 +1,322 @@
+@font-face {
+	font-family: 'Exo';
+	src: url('../fonts/Exo-Thin.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SinkinSans';
+	src: url('../fonts/SinkinSans-100Thin.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Titillium';
+	src: url('../fonts/Titillium-Thin.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CaviarDreams';
+	src: url('../fonts/CaviarDreams.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JosefinSans';
+	src: url('../fonts/JosefinSans-Thin.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Play';
+	src: url('../fonts/Play-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Walkway';
+	src: url('../fonts/Walkway_Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    padding: 0px;
+    font-family: 'Quicksand';
+    font-size: 2.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway';
+}
+
+.section_header {
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+	color: rgb(100, 183, 67);
+	/*background-color: rgb(35, 36, 39);*/
+	padding: 20px;
+	font-weight: bold;
+    font-size: 1.5em;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+
+/* HEADER */
+
+#header_logo {
+    width: auto;
+    height: 70px;
+    margin-top: -28px;
+}
+.navbar {
+	margin-top: 20px;
+	background-color: rgb(35, 36, 39);
+}
+.navbar-default .navbar-nav>li>a {
+	color: rgb(255, 203, 5);
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: rgb(0, 200, 0);
+	background-color: rgb(255, 203, 5);
+}
+.navbar-right {
+	margin-right: 0px;
+	padding-right: 10px;
+	text-align: right;
+}
+.container {
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 100%;
+}
+
+
+
+/* SOCIAL */
+.top_social_icons {
+	width: 45px;
+    height: auto;
+}
+.bottom_social_icons {
+	width: 5%;
+    height: auto;
+}
+#top_social_container {
+	margin-top: 20px;
+}
+
+/* DEMO STM */
+#demo_stm_banner {
+}
+#demo_header {
+}
+#demo_stm_android {
+
+}
+.demo_downloadtext {
+	font-size: 1.5em;
+}
+.demo_container {
+	background-color: rgb(232, 232, 232);
+}
+
+.separator {
+	padding: 15px;
+}
+
+/* BLOG FEED */
+#blog_feed_header{
+}
+.blog_feed_thumbnail {
+	width: 75%;
+	height: auto;
+	width: 257px;
+	height: 145px;
+	overflow: hidden;
+}
+.thumbnail .blog_feed_thumbnail {
+	width: 257px;
+	height: 145px;
+	overflow: hidden;
+}
+.blog_feed_text {
+	font-size: 0.9em;
+	color: rgb(35, 36, 39);
+}
+.blog_feed_date {
+	font-size: 1em;
+	font-size: 0.8em;
+}
+.blog_feed_box {
+	/*background-color: #eeeeee;*/
+	border-color: #cccccc;
+	border-width: 2px;
+	border-style: dashed;
+	-moz-border-radius: 20px;
+    border-top-radius: 20px;
+    border-top-radius: 20px;
+    padding: 25px;
+    bottom: 0;
+	top: 0;
+}
+.blog_feed_container {
+	background-color: rgb(255, 203, 5);
+	background-color: rgb(250, 244, 220);
+	background-color: #ffffff;
+	color: rgb(100, 183, 67);
+	margin-bottom: 4%;
+	padding-top: 2%;
+	/*margin-top: 4%;*/
+
+}
+
+/* OUR GAMES */
+.our_games_container {
+	/*background-color: rgb(100, 183, 67);
+	background-color: rgb(196, 232, 181);
+	background-color: rgb(232, 232, 232);
+	color: rgb(100, 183, 67);*/
+
+	padding-top: 10%;
+}
+.our_games_title {
+	font-size: 0.5em;
+	color: rgb(35, 36, 39);
+}
+.our_games_desc {
+	font-size: 0.75em;
+	color: rgb(35, 36, 39);
+}
+.trailer_thumbnail {
+	padding: 1px;
+	padding-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 5px;
+    background-color: rgba(35, 36, 39, 1.0);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 0.75em;
+}
+
+/* CAROUSEL */
+.carousel {
+	height: 450px;
+    overflow: hidden;
+}
+.carousel a {
+	color: rgb(255, 203, 5);
+}
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+    left: 10%;
+    right: 10%;
+    top: 250px;
+    padding-top:10px;
+}
+.carousel_description {
+	font-size: 0.85em;
+ }
+.carousel-inner img{
+	margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.carousel_container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.content_containers {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.content_container {
+	padding-bottom: 4%;
+}
+
+/* FOOTER */
+.footer {
+    padding: 5px;
+    background-color: rgba(35, 36, 39, 1.0);
+    color: rgb(255, 203, 5);
+    /*-moz-border-top-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    */
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: 0.75em;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    height: 50px;
+    position: fixed;
+  width: 100%;
+  bottom: 0;
+ 	z-index: 1030;
+}
+
+/* PRESS KIT */
+.modal_image {
+	max-width: 100%;
+	max-height: 100%;
+}
+.press_kit_title{
+	color: rgb(100, 183, 67);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight: bold;
+    font-size: 2.0em;
+}
+.press_kit_section_header{
+	color: rgb(100, 183, 67);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight: bold;
+    font-size: 2.0em;
+}
+.transparent {
+	background-color: rgba(0,0,0,0.0);
+}
+.popup_image {
+	max-height:100%;
+width:100%;
+
+margin:auto;
+display:block;
+}
+
+.social_icons {
+	float: right;
+	margin-top: 0px;
+}
+.with_zoom {
+	margin: 10px;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+.game_thumbnail {
+	cursor: pointer;
+}
