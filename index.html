@@ -14,27 +14,54 @@
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
 	<link href="css/hobbigames_website.css" rel="stylesheet">
-
+	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	  <![endif]-->
-	</header>
+</header>
 
 	<body>
+
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v3.2'
+			});
+		  };
+
+		  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+		  attribution=setup_tool
+		  page_id="670225326384827"
+		  theme_color="#0084ff"
+		  logged_in_greeting="Hi! How can we help you?"
+		  logged_out_greeting="Hi! How can we help you?">
+		</div>
 
 		<!-- HEADER -->
 		<nav id="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
+					</button-->
 					<a class="navbar-brand" href="http://www.hobbigames.com">
 						<img alt="Hobbi Games" id="header_logo" src="img/hobbigames/header_title.png">
 					</a>
@@ -58,7 +85,7 @@
 				</div>
 				<div class="content_containers">
 
-					<!--div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-toggle="modal" data-target=".bs-example-modal-lg">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-toggle="modal" data-target=".modal_d">
 						<div class="thumbnail">
 							<img src="img/duende/thumbnail_400x200.png" alt="...">
 							<div class="caption">
@@ -69,9 +96,22 @@
 								</center>
 							</div>
 						</div>
-					</div-->
+					</div>
 
-					<div class="game_thumbnail col-xs-12 col-sm-6 col-md-6 col-lg-6" data-toggle="modal" data-target=".modal_tme">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-toggle="modal" data-target=".modal_dtt">
+						<div class="thumbnail">
+							<img src="img/duende_taptap/thumbnail_400x200.png" alt="...">
+							<div class="caption">
+								<center>
+									<p class="our_games_desc">
+                                        Duende! Tap-Tap is a casualized, lighter version of the arcade-puzzle game Duende!
+                                    </p>
+								</center>
+							</div>
+						</div>
+					</div>
+
+					<!--div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-toggle="modal" data-target=".modal_tme">
 						<div class="thumbnail">
 							<img src="img/tinymonkeyescape/thumbnail_400x200.png" alt="...">
 							<div class="caption">
@@ -83,15 +123,15 @@
 							    </center>
 						    </div>
 					    </div>
-				    </div>
+				    </div-->
 
-                <div class="game_thumbnail col-xs-12 col-sm-6 col-md-6 col-lg-6" data-toggle="modal" data-target=".modal_gmw">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-toggle="modal" data-target=".modal_gmw">
 					<div class="thumbnail">
 						<img src="img/gnomemorewar/thumbnail_400x200.png" alt="...">
 						<div class="caption">
 							<center>
 							    <p class="our_games_desc">
-                                    Gnome More War is a stationary shooter where your goal is to stop the gnomes from stealing from your barn by shooting them down as they parachute down from the opposite cliff.
+                                    Gnomes have been stealing from your farm, and you must stop them! Together with your goblin friends, fend off the pesky thieving gnomes and protect your farm at all cost.
                                 </p>
 						    </center>
 					    </div>
@@ -99,6 +139,82 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- DUENDE! MODAL -->
+        <div class="modal fade modal_d" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row justify-content-md-center container">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 trailer_thumbnail text-center">
+                            <iframe width="400" height="300" src="https://www.youtube.com/embed/bjBHfi_zTqw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 our_games_desc">
+                            <h4 class="text-uppercase">Duende!</h4>
+                            <br><strong class="text-uppercase">Genre:</strong> Arcade
+                            <br><strong class="text-uppercase">Platforms:</strong>
+                            <ul>
+                                <!--li><a href="http://gamejolt.com/games/gnome-more-war/94432">GameJolt</a></li-->
+                                <li><a href="https://play.google.com/store/apps/details?id=com.duende.hobbigames">Android</a></li>
+                                <!--li>iOS (2016)</li-->
+                            </ul>
+                            <br><strong class="text-uppercase">Description:</strong>
+								Duende! is a game that will test your reaction time and quick thinking. Catch the little creatures (a.k.a Duendes) by simply touching them. Catch them in preset patterns to perform combos and boost your score. Chain combos for the ultimate boost! Play through 50 levels of arcade mode, completing tasks such as keeping yourself alive, making "4 of a Kind" combos, or even finding mystery items. You can also compete with other players by playing in Survival Mode and take the top spot on our online leaderboards!
+                            <br><br>
+                            <strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.facebook.com/hobbigames/">Official Page</a>
+                                    </li>
+                                    <!--li>
+                                        <a href="https://drive.google.com/file/d/0B_zMUBCSnvuWZXZpc3NLVnk1dlk/view?usp=sharing">Press Kit</a>
+                                    </li-->
+                                </ul>
+                            </strong>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- DUENDE! TAP-TAP MODAL -->
+        <div class="modal fade modal_dtt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row justify-content-md-center container">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 trailer_thumbnail text-center">
+                            <iframe width="400" height="300" src="https://www.youtube.com/embed/7HWS8rwrLZo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 our_games_desc">
+                            <h4 class="text-uppercase">Duende! Tap-Tap</h4>
+                            <br><strong class="text-uppercase">Genre:</strong> Arcade
+                            <br><strong class="text-uppercase">Platforms:</strong>
+                            <ul>
+                                <!--li><a href="http://gamejolt.com/games/gnome-more-war/94432">GameJolt</a></li-->
+                                <li><a href="https://play.google.com/store/apps/details?id=com.hobbigames.duendetaptap">Android</a></li>
+                                <!--li>iOS (2016)</li-->
+                            </ul>
+                            <br><strong class="text-uppercase">Description:</strong>
+							Get your fingers ready for some tappin' and swipin' action! Duende! Tap-Tap builds upon the game play of Whack-a-Mole, added a bit of ninja slicing action, combos, and chains to bring you frantic action-packed entertainment, while wrapped up in a cute and charming package. Simply touch duendes that appear to catch them. Swipe away the projectiles they throw at you in order to survive. The goal is to beat the highest score! Perform combos by catching the duendes in preset order and get bonus points. Chain your combos for the ultimate boost in points! To top it all off, Duende! Tap-Tap is FREE to download and play!
+                            <br><br>
+                            <strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.facebook.com/hobbigames/">Official Page</a>
+                                    </li>
+                                    <!--li>
+                                        <a href="https://drive.google.com/file/d/0B_zMUBCSnvuWZXZpc3NLVnk1dlk/view?usp=sharing">Press Kit</a>
+                                    </li-->
+                                </ul>
+                            </strong>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- TINY MONKEY ESCAPE MODAL -->
         <div class="modal fade modal_tme" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -113,8 +229,8 @@
                             <br><strong class="text-uppercase">Genre:</strong> Action
                             <br><strong class="text-uppercase">Platforms:</strong>
                             <ul>
-                                <li><a href="https://play.google.com/store/apps/details?id=com.hobbigames.tinymonkeyescape">Android</a></li>
-                                <li><a href="https://itunes.apple.com/us/app/tiny-monkey-escape/id1082787114?mt=8">iOS</a></li>
+                                <li>Android (2016)</li>
+                                <li>iOS (2016)</li>
                             </ul>
                             <br><strong class="text-uppercase">Description:</strong> You play as experiment BZ-1538 a.k.a “Goggles” and you are on the run from Dr.Zoo’s poachers. Jump from one platform and be sure to land safely on the next platform. But, wait! That’s not it! In your journey, you will face multiple obstacles such as spikes, poachers and other creatures who would love to end your quest early.
 
@@ -141,26 +257,26 @@
         <div class="modal fade modal_gmw" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 trailer_thumbnail text-center">
-                            <iframe width="400" height="300" src="https://www.youtube.com/embed/DbO1abgKW9w" frameborder="0" allowfullscreen></iframe>
+					<div class="row justify-content-md-center container">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 trailer_thumbnail text-center">
+                            <iframe width="400" height="300" src="https://www.youtube.com/embed/_Dp0ur3CUWU" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 our_games_desc">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 our_games_desc">
                             <h4 class="text-uppercase">Gnome More War</h4>
-                            <br><strong class="text-uppercase">Genre:</strong> Arcade/Shooter
+                            <br><strong class="text-uppercase">Genre:</strong> Action/Shooter
                             <br><strong class="text-uppercase">Platforms:</strong>
                             <ul>
-                                <li><a href="http://gamejolt.com/games/gnome-more-war/94432">GameJolt</a></li>
-                                <li>Android (2016)</li>
-                                <li>iOS (2016)</li>
+                                <!--li><a href="http://gamejolt.com/games/gnome-more-war/94432">GameJolt</a></li-->
+                                <li><a href="https://play.google.com/store/apps/details?id=com.hobbigames.gnomemorewar">Android</a></li>
+                                <li>iOS (Coming Soon)</li>
                             </ul>
-                            <br><strong class="text-uppercase">Description:</strong> Gnome More War is a stationary shooter where your goal is to stop the gnomes from stealing from your barn by shooting them down as they parachute down from the opposite cliff. There are power ups to pick up to aid you on your cause. Of course, it won't be so simple as some of these gnomes actually fight back and will try to bring you down, so not only do you have to protect your barn, you have to protect yourself as well.
-
+                            <br><strong class="text-uppercase">Description:</strong> 
+							Gnomes have been stealing from your farm, and you must stop them! Together with your goblin friends, fend off the pesky thieving gnomes and protect your farm at all cost. Experience the classic arcade castle defense game play with loads of twists. You have an arsenal of power-ups at your disposal, and a selection of 30+ upgrades to choose from. This is war!
                             <br><br>
                             <strong>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="http://playplayfun.com/gnome-more-war-game/">Official Page</a>
+                                        <a href="https://www.slidedb.com/games/gnome-more-war?fbclid=IwAR2LYtSYTbaE1Z2I-qP-dM2yTSRLjyDGRagXVXeD1E0NX3Tn9hoGqUkaZk8">Official Page</a>
                                     </li>
                                     <!--li>
                                         <a href="https://drive.google.com/file/d/0B_zMUBCSnvuWZXZpc3NLVnk1dlk/view?usp=sharing">Press Kit</a>
@@ -175,15 +291,24 @@
             </div>
         </div>
 
-        <!--iframe width="560" height="315" src="https://www.youtube.com/embed/NGmRPmxUwsw" frameborder="0" allowfullscreen></iframe-->
+		
+        <!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="670225326384827"
+  theme_color="#0084ff"
+  logged_in_greeting="Hi! How can we help you?"
+  logged_out_greeting="Hi! How can we help you?">
+</div>
 
 		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="container">
 				<div class="social_icons">
 					<a href="https://www.facebook.com/pages/Hobbi-Games/670225326384827?ref=bookmarks"><img class="top_social_icons" src="img/social/icon-fb.png"></a>
-					<a href="https://plus.google.com/104154087080746442207/posts"><img class="top_social_icons" src="img/social/icon-google.png"></a>
-					<a href="https://www.tumblr.com/blog/hobbigames"><img class="top_social_icons" src="img/social/icon-tumblr.png"></a>
+					<!--a href="https://plus.google.com/104154087080746442207/posts"><img class="top_social_icons" src="img/social/icon-google.png"></a-->
+					<!--a href="https://www.tumblr.com/blog/hobbigames"><img class="top_social_icons" src="img/social/icon-tumblr.png"></a-->
+					<!--a href="https://www.youtube.com/channel/UCs-QGA3pIyNXgpztnyRRBqA"><img class="top_social_icons" src="img/social/icon-twitter.png"></a-->
 					<a href="https://www.youtube.com/channel/UCs-QGA3pIyNXgpztnyRRBqA"><img class="top_social_icons" src="img/social/icon-youtube.png"></a>
 					<a href="mailto:hobbigames@gmail.com"><img class="top_social_icons" src="img/social/icon-email.png"></a>
 				</div>
@@ -191,17 +316,49 @@
 			</div>
 		</footer>
 
+		<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="670225326384827"
+  theme_color="#0084ff"
+  logged_in_greeting="Hi! How can we help you?"
+  logged_out_greeting="Hi! How can we help you?">
+</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
 		<script type="text/javascript" src="js/jquery.jgfeed.js"></script>
 		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 		<script type="text/javascript">
+
+
 		// Use any event to append the code
 		$(document).ready(function()
 		{
 			var cw = $('.social_icons').width();
 			$('.social_icons').css({'height':cw+'px'});
+
+			FB.CustomerChat.showDialog();
 
 			var atom_url = "http://hobbigames.blogspot.com/feeds/posts/default/";
 			//http://jsfiddle.net/cG9jU/33/
