@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 	border-radius: 5px;
-	color: rgb(100, 183, 67);
+	/*color: rgb(255, 0, 33);*/
+	color: rgb(0, 0, 0);
 	/*background-color: rgb(35, 36, 39);*/
 	padding: 20px;
 	font-weight: bold;
@@ -84,7 +85,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar {
 	margin-top: 20px;
-	background-color: rgb(35, 36, 39);
+	/*background-color: rgb(35, 36, 39);*/
+	background-color: rgb(255, 0, 33);
+	padding: 5px;
+	height: 55px;
 }
 .navbar-default .navbar-nav>li>a {
 	color: rgb(255, 203, 5);
@@ -211,7 +215,8 @@ h1, h2, h3, h4, h5, h6 {
 /* FOOTER */
 .footer {
     padding: 5px;
-    background-color: rgba(35, 36, 39, 1.0);
+	color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 33, 1.0);
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -257,8 +262,8 @@ h1, h2, h3, h4, h5, h6 {
 /* FOOTER */
 .footer {
     padding: 5px;
-    background-color: rgba(35, 36, 39, 1.0);
-    color: rgb(255, 203, 5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(190, 190, 190);
     /*-moz-border-top-radius: 50px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -269,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.75em;
     margin-bottom: 0px;
     vertical-align: middle;
-    height: 50px;
+    height: 40px;
     position: fixed;
   width: 100%;
   bottom: 0;
