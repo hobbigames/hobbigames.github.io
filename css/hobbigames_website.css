@@ -81,14 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 #header_logo {
     width: auto;
     height: 70px;
-    margin-top: -28px;
+    margin-top: -30px;
+	margin-left: -15px;
 }
 .navbar {
 	margin-top: 20px;
 	/*background-color: rgb(35, 36, 39);*/
 	background-color: rgb(255, 0, 33);
 	padding: 5px;
-	height: 55px;
+	/*height: 55px;*/
 }
 .navbar-default .navbar-nav>li>a {
 	color: rgb(255, 203, 5);
@@ -115,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .top_social_icons {
 	width: 45px;
     height: auto;
+	
 }
 .bottom_social_icons {
 	width: 5%;
