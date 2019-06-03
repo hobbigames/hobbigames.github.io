@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section_header {
 	-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+  -moz-border-radius: 5px;
 	border-radius: 5px;
 	/*color: rgb(255, 0, 33);*/
 	color: rgb(0, 0, 0);
@@ -73,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 20px;
 	font-weight: bold;
     font-size: 1.5em;
+	text-align: center;
+	margin-top: 30px;
     /*font-family: 'Open Sans', sans-serif;*/
 }
 
@@ -88,15 +90,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 20px;
 	/*background-color: rgb(35, 36, 39);*/
 	background-color: rgb(255, 0, 33);
+	color: rgb(255, 255, 255);
 	padding: 5px;
 	/*height: 55px;*/
 }
-.navbar-default .navbar-nav>li>a {
-	color: rgb(255, 203, 5);
+.navbar-default .navbar-nav > li > form > a {
+	color: rgb(255, 255, 255);
 }
-.navbar-default .navbar-nav>li>a:hover {
-	color: rgb(0, 200, 0);
-	background-color: rgb(255, 203, 5);
+
+.navbar-nav{
+
+}
+
+.navbar-default .navbar-nav > li > form > a:hover {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-decoration: none;
+	/*background-color: rgb(255, 203, 5);*/
 }
 .navbar-right {
 	margin-right: 0px;
@@ -116,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 .top_social_icons {
 	width: 45px;
     height: auto;
-	
+
 }
 .bottom_social_icons {
 	width: 5%;
@@ -156,8 +166,8 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 }
 .thumbnail .blog_feed_thumbnail {
-	width: 257px;
-	height: 145px;
+	width: 100%;
+	height: auto;
 	overflow: hidden;
 }
 .blog_feed_text {
