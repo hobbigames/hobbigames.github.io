@@ -1,1 +1,40 @@
+1.09
+- Corrected Home link
+
 1.08
+- Added Twitter to header
+
+v1.07
+- Added Twitter account
+- Polishing
+
+v1.06
+- Added Gnome More War Press Kit
+- Updated Header and Footer
+- Updated Links
+
+v1.05
+- Hide FB Chat Dialog by default
+
+v1.04
+- FB Customer Chat Plugin codes cleanup
+
+v1.03
+- Fixed Header Section
+
+v1.02
+- Updated color/theme
+- Move social media buttons from footer to header
+
+v1.01
+- Removed Tiny Monkey
+- Added back Duende! and Duende! Tap-Tap
+- Updated links and details
+- Started integration of FB Customer Chat Plugin
+
+v1.00
+- Put iOS & Android links for TME
+- Changed GNW thumbnail image
+- Delete CNAME
+- Create CNAME
+- Initial commit
