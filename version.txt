@@ -1,3 +1,6 @@
+1.10
+- Added Nerds & Scoundrels article link to Press Kit Page
+
 1.09
 - Corrected Home link
 
