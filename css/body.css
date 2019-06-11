@@ -98,3 +98,26 @@
   padding: 20px;
   /*min-width: 400px;*/
 }
+
+/* FEEDBACK */
+.feedback {
+  padding: 30px;
+  color: #0a0353;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.feedback_logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.feedback_text {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.feedback_source {
+  text-align: justify;
+}

@@ -1,3 +1,7 @@
+1.12
+- Added Feedbacks/Review Quotes to Home Page
+- Set all Youtube Embeds to 16:9 ratio
+
 1.11
 - Improved Our Games Section
 
