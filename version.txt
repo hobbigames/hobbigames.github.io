@@ -1,3 +1,6 @@
+1.11
+- Improved Our Games Section
+
 1.10
 - Added Nerds & Scoundrels article link to Press Kit Page
 

@@ -73,8 +73,12 @@
 }
 
 .our_games_desc {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 10px;
+  padding-left: 50px;
+  margin-right: 50px;
+  font-size: 1.1em;
+  color: rgb(35, 36, 39);
+  margin-bottom: 50px;
 }
 
 #contact_us_header {
@@ -84,4 +88,13 @@
 .ourgames_thumbnail {
   width: 100%;
   height: auto;
+}
+
+.game_video {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  min-height: 300px;
+  padding: 20px;
+  /*min-width: 400px;*/
 }
