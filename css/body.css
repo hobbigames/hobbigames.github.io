@@ -20,6 +20,8 @@
   font-size: 2rem;
 }
 
+
+/* PRESS KIT */
 .presskit_section_title {
   text-align: left;
 }
@@ -46,18 +48,13 @@
   margin-top: 100px;
 }
 
-.modal-lg {
-  padding-top: 50px;
-  /*max-width: 90%;
-  width: 80%;
-  height: 100%;*/
-}
-
 .trailer_thumbnail{
   padding-top: 50px;
   padding-left: 50px;
 }
 
+
+/* OUR GAMES */
 .thumbnail {
   padding: 0px;
 }
@@ -68,7 +65,7 @@
 }
 
 #our_games_header {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -79,10 +76,6 @@
   font-size: 1.1em;
   color: rgb(35, 36, 39);
   margin-bottom: 50px;
-}
-
-#contact_us_header {
-  margin-top: 40px;
 }
 
 .ourgames_thumbnail {
@@ -98,6 +91,14 @@
   padding: 20px;
   /*min-width: 400px;*/
 }
+
+.modal-lg {
+  padding-top: 50px;
+  /*max-width: 90%;
+  width: 80%;
+  height: 100%;*/
+}
+
 
 /* FEEDBACK */
 .feedback {
@@ -120,4 +121,10 @@
 
 .feedback_source {
   text-align: justify;
+}
+
+
+/* CONTACT US */
+#contact_us_header {
+  margin-top: 40px;
 }

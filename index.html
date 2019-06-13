@@ -14,8 +14,8 @@
 
   <!-- Social Media Icons -->
   <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
   <link rel="icon" type="image/x-icon" href="img/hobbigames/favicon.ico" />
 
   <title>Hobbi Games</title>
@@ -49,23 +49,20 @@
 
 
   <!-- HEADER -->
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg collapsed_navbar">
 
-    <a class="navbar-brand mr-auto" href="#">
-      <img alt="Hobbi Games" id="header_logo" src="img/hobbigames/logo_header.png">
+    <a class="navbar-brand" p-0 href="#">
+      <img class="img-fluid" alt="Hobbi Games" id="header_logo" src="img/hobbigames/logo_header.png">
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button id="menuButton" class="navbar-toggler menu_button" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="material-icons" aria-hidden="true">menu</i>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-md-left" id="navbarsExample08">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse " id="headerMenu">
+      <ul class="navbar-nav mr-auto mt-2 mt-xs-0 ">
         <li class="nav-item menu active">
-          <a class="nav-link" href="#"> <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item menu active">
-          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item menu">
           <a class="nav-link" href="http://hobbigames.blogspot.com/" target="_blank">BLOG</a>
@@ -73,38 +70,46 @@
         <li class="nav-item menu">
           <a class="nav-link" href="press_kit.html" target="_blank">PRESS KIT</a>
         </li>
-
       </ul>
-    </div>
-    <!-- https://codepen.io/colorlib/pen/GOzroL -->
-    <form class="form-inline my-2 my-md-0">
-      <div class="facebook nav-link social_media">
-        <a href="https://www.facebook.com/pages/Hobbi-Games/670225326384827?ref=bookmarks" target="_blank">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="youtube nav-link social_media">
-        <a href="https://www.youtube.com/channel/UCs-QGA3pIyNXgpztnyRRBqA/" target="_blank">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="twitter nav-link social_media">
-        <a href="https://twitter.com/khinrunite" target="_blank">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="envelope nav-link social_media">
-        <a href="mailto:hobbigames@gmail.com" target="_blank">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-      </div>
-    </form>
 
+      <form class="form-inline my-2 my-xs-0">
+        <div class="facebook nav-link social_media">
+          <a href="https://www.facebook.com/pages/Hobbi-Games/670225326384827?ref=bookmarks" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="youtube nav-link social_media">
+          <a href="https://www.youtube.com/channel/UCs-QGA3pIyNXgpztnyRRBqA/" target="_blank">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="twitter nav-link social_media">
+          <a href="https://twitter.com/khinrunite" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="envelope nav-link social_media">
+          <a href="mailto:hobbigames@gmail.com" target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </form>
+
+    </div>
   </nav>
+
+  <div id="users-device-size">
+    <div id="xs" class="d-block d-sm-none"></div>
+    <div id="sm" class="d-none d-sm-block d-md-none"></div>
+    <div id="md" class="d-none d-md-block d-lg-none"></div>
+    <div id="lg" class="d-none d-lg-block d-xl-none"></div>
+    <div id="xl" class="d-none d-xl-block"></div>
+  </div>
 
   <main role="main p-0">
 
     <div class="container-fluid">
+
       <!-- OUR GAMES -->
       <div class="row odd text-center">
 
@@ -117,7 +122,7 @@
             <img class="thumbnail_image" src="img/gnomemorewar/thumbnail_400x200.png" alt="...">
             <div class="caption">
               <center>
-                <p class="our_games_desc">
+                <p class="our_games_desc"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                   Gnomes have been stealing from your farm, and you must stop them! Together with your goblin friends, fend off the pesky thieving gnomes and protect your farm at all cost.
                 </p>
               </center>
@@ -150,7 +155,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
 
       <!-- FEEDBACKS -->
@@ -162,13 +167,13 @@
             <div class="col col-12 col-lg-8 col-xl-8">
               <p class="feedback_text">
                 "Gnome More War is a brand new hybrid action game that combines the castle defence and shoot ’em up genres to create something unique."
-              <p>
-              <p class="feedback_source">
-                <span class="feedback_author">- Ash Mayhew, </span>
-                <span><a href="https://www.droidgamers.com/2019/01/02/gnome-war-android">
-                  Droid Gamers
-                </a></span>
-              <p>
+                <p>
+                  <p class="feedback_source">
+                    <span class="feedback_author">- Ash Mayhew, </span>
+                    <span><a href="https://www.droidgamers.com/2019/01/02/gnome-war-android">
+                        Droid Gamers
+                      </a></span>
+                    <p>
             </div>
           </div>
         </div>
@@ -179,13 +184,13 @@
             <div class="col col-12 col-lg-8 col-xl-8">
               <p class="feedback_text">
                 "With endearing art and well-balanced mechanics, Gnome More War enjoys a high level of replayability."
-              <p>
-              <p class="feedback_source">
-                <span class="feedback_author">- Travis Scoundrel, </span>
-                <span><a href="https://www.nerdsandscoundrels.com/gnome-more-war-preview/">
-                  Nerds & Scoundrels
-                </a></span>
-              <p>
+                <p>
+                  <p class="feedback_source">
+                    <span class="feedback_author">- Travis Scoundrel, </span>
+                    <span><a href="https://www.nerdsandscoundrels.com/gnome-more-war-preview/">
+                        Nerds & Scoundrels
+                      </a></span>
+                    <p>
             </div>
           </div>
         </div>
@@ -200,8 +205,8 @@
               <p class="feedback_source">
                 <span class="feedback_author">- Michael Logarta, </span>
                 <span><a href="https://www.gmanetwork.com/news/scitech/technology/688226/pinoy-made-gnome-more-war-is-an-action-packed-arcade-style-mobile-game/story/">
-                  GMA News
-                </a></span>
+                    GMA News
+                  </a></span>
               </p>
             </div>
           </div>
@@ -239,11 +244,11 @@
               <div class="form-group">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message here..." required></textarea>
               </div>
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </form>
 
           </div>
-            <br><br>
+          <br><br>
         </div>
       </div>
 
@@ -399,6 +404,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
