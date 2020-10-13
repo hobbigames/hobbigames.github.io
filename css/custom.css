@@ -1,13 +1,13 @@
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 80%;
+    max-width: 90%;
     padding-top:20px;
   }
 }
 
 @media (min-width: 300px) {
   .modal-dialog {
-    max-width: 80%;
+    max-width: 90%;
     padding-top:20px;
   }
 }
